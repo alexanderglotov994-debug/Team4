@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда 4 — Маги Данных и Искусственного Интеллекта</title>
+    <meta name="description" content="Сайт Команды 4. Эксперты в Big Data, машинном обучении, нейронных сетях и интеллектуальном анализе данных.">
+    <!-- Google Fonts: JetBrains Mono for terminal code aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            root@team-04:~# <span class="cursor-blink">_</span>
+        </div>
+        <nav class="nav">
+            <a href="#terminal" class="nav-link">CLI Консоль</a>
+            <a href="#telemetry" class="nav-link">Телеметрия</a>
+            <a href="#pipeline" class="nav-link">Пайплайны</a>
+        </nav>
+        <button class="cta-button" onclick="scrollToSection('terminal')">Запустить консоль</button>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="terminal-badge">DATALABS // NEURAL_NET_READY</div>
+            <h1 class="hero-title">МАГИ ДАННЫХ И <span class="glow-text">ИИ</span></h1>
+            <p class="hero-subtitle">
+                Мы обучаем нейронные сети и превращаем терабайты сырых логов в понятные бизнес-решения. Мы автоматизируем интеллект.
+            </p>
+        </section>
+
+        <!-- Interactive CLI Terminal Simulator -->
+        <section class="terminal-section" id="terminal">
+            <h2 class="section-title">Интерактивный терминал</h2>
+            <p class="section-subtitle">Введите команду в консоль ниже для взаимодействия с базой знаний Команды 4</p>
+            
+            <div class="terminal-box">
+                <div class="terminal-bar">
+                    <span class="term-dot close"></span>
+                    <span class="term-dot minimize"></span>
+                    <span class="term-dot maximize"></span>
+                    <span class="term-title">interactive_shell.sh - 80×24</span>
+                </div>
+                <div class="terminal-screen" id="terminal-screen">
+                    <div class="term-output">Система инициализирована. База данных AI подключена.</div>
+                    <div class="term-output">Доступные команды: <span class="highlight">help</span>, <span class="highlight">team</span>, <span class="highlight">stats</span>, <span class="highlight">skills</span>, <span class="highlight">clear</span>.</div>
+                    <!-- Live lines will appear here -->
+                    <div class="term-input-row">
+                        <span class="term-prompt">guest@team-04:~$</span>
+                        <input type="text" id="term-input" autocomplete="off" autofocus>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Telemetry Dashboards -->
+        <section class="telemetry-section" id="telemetry">
+            <h2 class="section-title">Системные показатели</h2>
+            
+            <div class="telemetry-grid">
+                <div class="tel-card">
+                    <div class="tel-title">СКОРОСТЬ ПАЙПЛАЙНА</div>
+                    <div class="tel-value">1.8s</div>
+                    <div class="tel-bar-container">
+                        <div class="tel-bar-fill" style="width: 95%"></div>
+                    </div>
+                    <div class="tel-sub">Быстрее на 92%, чем в 2025</div>
+                </div>
+
+                <div class="tel-card">
+                    <div class="tel-title">ОБЪЕМ ДАННЫХ В СУТКИ</div>
+                    <div class="tel-value">12.5 TB</div>
+                    <div class="tel-bar-container">
+                        <div class="tel-bar-fill" style="width: 88%"></div>
+                    </div>
+                    <div class="tel-sub">ClickHouse кластер под нагрузкой</div>
+                </div>
+
+                <div class="tel-card">
+                    <div class="tel-title">ПАРАМЕТРЫ НЕЙРОСЕТЕЙ</div>
+                    <div class="tel-value">175B</div>
+                    <div class="tel-bar-container">
+                        <div class="tel-bar-fill" style="width: 90%"></div>
+                    </div>
+                    <div class="tel-sub">Собственные LLM агенты обучены</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Neural Network nodes preview -->
+        <section class="pipeline-section" id="pipeline">
+            <h2 class="section-title">Схема обработки данных</h2>
+            <div class="network-viz glass">
+                <div class="node-connection">
+                    <div class="node start">Источники данных</div>
+                    <div class="arrow">&rarr;</div>
+                    <div class="node kafka">Kafka брокер</div>
+                    <div class="arrow">&rarr;</div>
+                    <div class="node spark">Spark ML процессор</div>
+                    <div class="arrow">&rarr;</div>
+                    <div class="node model">Нейросеть LLM</div>
+                    <div class="arrow">&rarr;</div>
+                    <div class="node output">Mango Dialogues (API)</div>
+                </div>
+                <div class="viz-note">
+                    * Данные передаются мгновенно. Интеллектуальный агент интегрирован с моделью для автоматического ответа на обращения.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Команда 4 — Лаборатория Машинного Обучения. Все права защищены.</p>
+    </footer>
+
+    <!-- Виджет Mango Office -->
+    <script>
+        (function(w, d, u, i, o, s, p) {
+            if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+            w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+            s = d.createElement('script'); s.async = 1; s.id = i; s.src = u; s.charset = 'utf-8';
+            p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+        }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+        mgo({multichannel: {id: 79690}});
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
